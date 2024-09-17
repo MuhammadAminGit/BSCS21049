@@ -284,3 +284,71 @@ section .title::after{
 }
 
 
+.skills {
+    background: #fff;
+    color: #000;
+    padding: 50px 0;
+}
+
+.skills .title::before {
+    background-color: crimson;
+}
+
+.skills .title::after {
+    content: "technical expertise";
+    background-color: #fff;
+    color: crimson;
+    font-weight: bold;
+}
+
+.skills .skills-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.skills .skills-card {
+    background-color: #f8f8f8;
+    border: 2px solid #ddd;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills .skills-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.skills .skills-card h3 {
+    font-size: 24px;
+    color: crimson;
+    margin-bottom: 15px;
+}
+
+.skills .skills-card p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.skills .skills-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills .skills-card ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.skills .skills-card:hover ul li {
+    color: crimson;
+}
+
+
