@@ -204,3 +204,83 @@ section .title::after{
 	color: crimson;
 	background: none;
 }
+
+.experience {
+    background: #111;
+    color: #fff;
+}
+
+.experience .title::before {
+    background-color: #fff;
+}
+
+.experience .title::after {
+    content: "what i've done";
+    background-color: #111;
+}
+
+.experience .experience-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience .experience-box {
+    background-color: #222;
+    border-radius: 6px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.experience .experience-box:hover {
+    background-color: crimson;
+}
+
+.experience .experience-box .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.experience .experience-box .experience-role {
+    font-size: 22px;
+    font-weight: 600;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+.experience .experience-box:hover .experience-role {
+    color: #fff;
+}
+
+.experience .experience-box .experience-date {
+    font-size: 18px;
+    color: #ccc;
+    text-align: right;
+    font-weight: 500;
+}
+
+.experience .experience-box:hover .experience-date {
+    color: #fff;
+}
+
+.experience .experience-box .experience-company {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.experience .experience-box p {
+    font-size: 16px;
+    color: #bbb;
+    margin-bottom: 5px;
+}
+
+.experience .experience-box:hover p,
+.experience .experience-box:hover .experience-company {
+    color: #fff;
+}
+
+
