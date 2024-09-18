@@ -6,10 +6,4 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('.navbar').classList.remove('sticky');
         }
     });
-
-    document.querySelector('.menu-btn').addEventListener('click', function () {
-        document.querySelector('.navbar .menu').classList.toggle('active');
-        document.querySelector('.menu-btn i').classList.toggle('active');
-    });
-
 });
