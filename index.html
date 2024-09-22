@@ -7,20 +7,12 @@
     <link rel="stylesheet" href="styles.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    
 </head>
 <body>
-    <script src="script.js"></script>
     <nav class="navbar">
-		<div  class="max-width">
-			<div class="logo"><a href="#">Portfo<span>lio</span></a></div>
-			<ul class="menu">
-				<li><a href="#home" class="menu-btn">Home</a></li>
-				<li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#experience" class="menu-btn">Experience</a></li>
-				<li><a href="#skills" class="menu-btn">Skills</a></li>
-				<li><a href="#projects" class="menu-btn">Projects</a></li>
-				<li><a href="#contact" class="menu-btn">Contact</a></li>
+		<div class="max-width">
+			<div class="logo" id='logo'></div>
+			<ul class="menu" id="menu">
 			</ul>
 			<div class="menu-btn">
 				<i class="fas fa-bars"></i>
@@ -30,208 +22,98 @@
 
     <section class="home" id="home">
 		<div class="max-width">
-            <video autoplay muted loop class="background-video">
-                <source src="assets/vid.mp4" type="video/mp4">
+            <video autoplay muted loop class="background-video" id="background-video">
                 Your browser does not support the video tag.
             </video>
 			<div class="home-content">
-				<div class="text-1">السلام علیکم My Name is</div>
-				<div class="text-2">Muhammad Amin | محمد امین</div>
-				<div class="text-3">And I'm a Software Engineer</div>
-				<a href="#contact">Hire me</a>
+				<div id="greeting" class="text-1"></div>
+                <div id="name" class="text-2"></div>
+                <div id="role" class="text-3"></div>
+                <a href="#" id="hire-me"></a>
 			</div>
 		</div>
 	</section>
 
     <section class="about" id="about">
 		<div class="max-width">
-			<h2 class="title">About me</h2>
+			<h2 class="title" id="about-title"></h2>
 			<div class="about-content">
 				<div class="column left">
-					<img src="assets/portrait.jpeg" alt="">
+					<img id="about-image" src="" alt="">
 				</div>
 				<div class="column right">
-					<div class="text">I'm Amin and I'm a Software Engineer
-					</div>
-					<p>I’m a passionate 4th-year Computer Science student at Information Technology University, Lahore. With over a year of experience as an Associate Software Engineer at Veritus Software, I’ve honed my skills in Python, C++, and React.js through various projects. I enjoy tackling challenging problems and am constantly expanding my technical expertise. Currently, I’m working on web applications and backend development, always aiming for clean, efficient solutions</p>
-					<a href="assets/Amin_CV.pdf" target="_blank">Download CV</a>
+					<div id="about-description" class="text"></div>
+                    <p id="about-details"></p>
+                    <a id="cv-link" href="" target="_blank">Download CV</a>
 				</div>
 			</div>
 		</div>
 	</section>
 
-    <section class="experience" id="experience">
-        <div class="max-width">
-            <h2 class="title">Experience</h2>
-            <div class="experience-content">
-                <div class="experience-box">
-                    <div class="experience-header">
-                        <div class="experience-role">Associate Software Engineer</div>
-                        <div class="experience-date">May 2023 - Present</div>
-                    </div>
-                    <div class="experience-company">Veritus Software</div>
-                    <ul>
-                    <li><p> Designed and developed the user interface for the Ground Control application using Qt and C++
-                    </p></li>
-                    <li><p> Created and implemented an internal task management application using React.js
-                    </p></li>
-                    <li><p>Enhanced the user interfaces of various internal applications, improving usability and overall user experience
-                    </p></li>
-                    </ul>
-                </div>
-                <div class="experience-box">
-                    <div class="experience-header">
-                        <div class="experience-role">Teaching Assistant</div>
-                        <div class="experience-date">Aug 2022 - Present</div>
-                    </div>
-                    <div class="experience-company">Information Technology University</div>
-                    <ul>
-                    <li><p> Streamlined the process of code extraction for evaluation and grading, resulting in a more efficient and accurate assessment system
-                        
-                    </p></li>
-                    <li><p>  Automated the generation and distribution of weekly progress and grade reports for students via email, enhancing communication and transparency                   
-                    </p></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">Skills</h2>
-            <div class="skills-content">
-                <div class="skills-card">
-                    <h3>Languages</h3>
-                    <p>Proficient in multiple programming languages.</p>
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>Python</li>
-                        <li>C/C++</li>
-                        <li>TypeScript</li>
-                        <li>SQL</li>
-                    </ul>
-                </div>
-                <div class="skills-card">
-                    <h3>Frameworks</h3>
-                    <p>Experienced in modern front-end and back-end technologies for building robust applications.</p>
-                    <ul>
-                        <li>Qt</li>
-                        <li>React.js</li>
-                        <li>Vue.js</li>
-                    </ul>
-                </div>
-                <div class="skills-card">
-                    <h3>Developer Tools</h3>
-                    <p>Expert in using development tools to manage codebases, containers, and server environments.</p>
-                    <ul>
-                        <li>Git</li>
-                        <li>Docker</li>
-                        <li>Linux</li>
-                        <li>Jupyter</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="projects" id="projects">
+        
+	<section class="experience" id="experience">
 		<div class="max-width">
-			<h2 class="title">My Projects</h2>
-			<div class="projects-content">
-				<div class="card">
-					<div class="box">
-						<div class="text">Spatial Analysis of Traffic Accidents</div>
-						<p> Conducted in-depth spatial and temporal analysis of traffic accidents in New York City, providing valuable insights
-                            into accident patterns and trends.
-                            </p>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="box">
-						<div class="text">ThreeFace WMS</div>
-						<p>Developed a comprehensive full-stack warehouse management web application for vendors, integrating both
-                            front-end and back-end functionalities.
-                            </p>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="box">
-						<div class="text">Facial Recognition using PCA</div>
-						<p>Engineered a facial recognition model by implementing Principal Component Analysis (PCA) from scratch,
-                            achieving a recognition accuracy of 80%.
-                            </p>
-					</div>
-				</div>
-			</div>
+			<h2 class="title" id="experience-title"></h2>
+			<div class="experience-content" id="experience-content"></div>
 		</div>
 	</section>
 
-    <section class="contact" id="contact">
+	<section class="skills" id="skills">
 		<div class="max-width">
-			<h2 class="title">Contact Me</h2>
+			<h2 class="title" id="skills-title"></h2>
+			<div id="skills-content" class="skills-content"></div>
+		</div>
+	</section>
+	
+	<section class="projects" id="projects">
+		<div class="max-width">
+			<h2 class="title" id="projects-title"></h2>
+			<div id="projects-content" class="projects-content"></div>
+		</div>
+	</section>
+
+	<section class="contact" id="contact">
+		<div class="max-width">
+			<h2 class="title" id="contact-title"></h2> 
 			<div class="contact-content">
 				<div class="column left">
-					<div class="text">Get in Touch</div>
+					<div class="text"></div> 
 					<div class="icons">
-						<div class="row">
-							<i class="fas fa-user"></i>
-							<div class="info">
-								<div class="head">Name</div>
-								<div class="sub-title">Muhammad Amin</div>
-							</div>
-						</div>
-						<div class="row">
-							<i class="fas fa-map-marker-alt"></i>
-							<div class="info">
-								<div class="head">Address</div>
-								<div class="sub-title">Lahore, Pakistan</div>
-							</div>
-						</div>
-						<div class="row">
-							<i class="fas fa-envelope"></i>
-							<div class="info">
-								<div class="head">Email</div>
-								<div class="sub-title">maminyahya@gmail.com</div>
-							</div>
-						</div>
+					
 					</div>
 				</div>
 				<div class="column right">
-					 <div class="text">Message me</div>
-					 <form action="#">
-					 	<div class="fields">
-					 		<div class="field name">
-					 			<input type="text" placeholder="Name" required>
-					 		</div>
-					 		<div class="field email">
-					 			<input type="text" placeholder="Email" required>
-					 		</div>
-					 	</div>
-					 	<div class="field">
-					 		<input type="text" placeholder="Subject" required>
-					 	</div>
-					 	<div class="field textarea">
-					 		<textarea cols="30" rows="10" placeholder="Describe project.." required></textarea>
-					 	</div>
-					 	<div class="button">
-					 		<button type="submit">Send Message</button>
-					 	</div>
-					 </form>
+					<div class="text"></div> 
+					<form action="#">
+						<div class="fields">
+							<div class="field name">
+								<input type="text" placeholder="Name" required>
+							</div>
+							<div class="field email">
+								<input type="text" placeholder="Email" required>
+							</div>
+						</div>
+						<div class="field">
+							<input type="text" placeholder="Subject" required>
+						</div>
+						<div class="field textarea">
+							<textarea cols="30" rows="10" placeholder="Describe project.." required></textarea>
+						</div>
+						<div class="button">
+							<button type="submit">Send Message</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
 	</section>
 
-
 	<footer>
-		<span>Created by <a href="#">Muhammad Amin</a> | <span class="far fa-copyright"></span> 2024 All rights reserved.</span>
+		<span></span>
 	</footer>
+	
 
-    
-    
+    <script src="script.js"></script>
 
 </body>
 </html>
